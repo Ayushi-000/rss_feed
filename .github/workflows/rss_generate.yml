@@ -1,0 +1,32 @@
+name: Generate RSS
+
+on:
+  schedule:
+    - cron: '0 4 * * *'  # Runs daily at 9:30 AM IST
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v2
+
+      - name: Setup Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt || true
+
+      - name: Run RSS Generator
+        run: python generate_rss.py
+
+      - name: Commit & Push feed.xml
+        run: |
+          git config user.name "Ayushi GitHub Bot"
+          git config user.email "ayushi@example.com"
+          git add feed.xml
+          git commit -m "Auto-update RSS feed"
+          git push

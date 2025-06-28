@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+  <channel>
+    <title>AI Blog Automation</title>
+    <link>https://your-blog-url.com</link>
+    <description>Daily AI blogs by automation</description>
+    <language>en-us</language>
+    <pubDate>Sat, 28 Jun 2025 09:16:08 +0000</pubDate>
+
+    <item>
+      <title>Top AI Tools in 2025</title>
+      <description><![CDATA[<h2>Introduction</h2>
+<p>Discover the most promising AI tools shaping our future.</p>
+<h2>ChatGPT</h2>
+<p>A powerful conversational AI by OpenAI.</p>
+<h2>Gemini</h2>
+<p>Google's creative and multimodal AI assistant.</p>
+<h2>Claude</h2>
+<p>Anthropic’s safe and smart assistant.</p>
+<h2>Conclusion</h2>
+<p>These tools are revolutionizing industries globally.</p>]]></description>
+      <link>https://your-blog-url.com/top-ai-tools-in-2025</link>
+      <guid>https://your-blog-url.com/top-ai-tools-in-2025</guid>
+      <pubDate>Sat, 28 Jun 2025 09:16:08 +0000</pubDate>
+    </item>
+
+  </channel>
+</rss>
